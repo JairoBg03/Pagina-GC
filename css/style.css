@@ -267,6 +267,65 @@ img {
   100% { transform: translateY(0px); }
 }
 
+/* Course Card in Hero */
+.course-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: var(--spacing-24);
+  margin-bottom: var(--spacing-40);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.course-label {
+  display: inline-block;
+  background-color: var(--color-spring-green);
+  color: var(--color-text-anthracite);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-16);
+}
+
+.course-title {
+  font-size: var(--text-body-lg) !important;
+  color: var(--color-pure-white);
+  margin-bottom: var(--spacing-12) !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.course-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-8);
+}
+
+.course-list li {
+  font-size: 13px;
+  color: var(--color-pure-white);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  opacity: 0.85;
+}
+
+.course-list li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-spring-green);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
 /* Feature Sections */
 .section-title {
   text-align: center;
